@@ -12,5 +12,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/api/tasks', taskRoutes);
+app.use('/',(req,res)=>{
+    res.send("backend is working for task compass")
+}
+    
+)
 
 export default app;
